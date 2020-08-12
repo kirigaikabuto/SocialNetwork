@@ -1,0 +1,12 @@
+python -m venv venv
+venv\scripts\activate
+pip install django
+
+django-admin startproject mysite .
+python manage.py startapp profiles
+python manage.py migrate
+python manage.py createsuperuser
+
+1) add profiles app to mysite->settings.py INSTALLED_APPS
+python manage.py runserver
+2)
